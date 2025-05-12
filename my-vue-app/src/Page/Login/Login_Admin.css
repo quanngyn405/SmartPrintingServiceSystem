@@ -1,0 +1,94 @@
+.login_admin_hinhnen {
+    background-image: url('../../assets/background.jpg');
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    width: 100vw;                   
+    height: 100vh;                  
+    margin: 0;
+    padding: 0;   
+    background-position: -12.5rem 6.25rem;
+}
+
+.login_admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0.125rem solid black;
+    width: 40.625rem;
+    position: absolute;          /* Đặt vị trí tuyệt đối */
+    top: 50%;                    /* Căn giữa theo trục dọc */
+    left: 50%;                   /* Căn giữa theo trục ngang */
+    transform: translate(-50%, -50%); /* Dịch chuyển ngược lại 50% chiều rộng và chiều cao */
+    border-radius: 0.625rem;
+    gap: 1.5625rem;
+    background-color: rgba(8, 42, 56, 0.9);
+    height: 40.625rem;
+}
+
+.logo_admin {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.login_admin img {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.login_admin h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.user_pass_admin{
+    display: flex;
+    flex-direction: column;
+    gap: 2.8125rem;
+    width: 80%;
+}
+
+.user_pass_admin input{
+    width: 100%;   /* Chiều rộng */
+    height: 2.5rem;   /* Chiều cao */
+    border-radius: 0.3125rem;  /* Bo góc cho khung */
+    padding: 0.3125rem;  /* Khoảng cách giữa nội dung và khung */
+    font-size: 1.4375rem;
+}
+
+.userName_admin{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.875rem;
+}
+
+.pass_admin{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.875rem;
+    margin-bottom: 4.0625rem;
+}
+
+.button_admin_login{
+    display: flex;    
+    gap: 3.125rem;
+}
+
+.button_admin_login button{
+    width: 11.25rem;   /* Đặt chiều rộng của button */
+    height: 4.375rem;   /* Đặt chiều cao của button */
+    padding: 0.75rem 1.5rem;   
+    border-radius: 3.125rem;    
+    background-color: #4CAF50;
+    font-size: 1.875rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_admin_login button:hover{
+    background-color: #116915;  
+}

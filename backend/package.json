@@ -1,0 +1,38 @@
+{
+  "name": "hcmutspss",
+  "version": "1.0.0",
+  "description": "backend for hcmutspss",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinhAnhGitHub/BTL_SE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TinhAnhGitHub/BTL_SE/issues"
+  },
+  "homepage": "https://github.com/TinhAnhGitHub/BTL_SE#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "fs-extra": "^11.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.5",
+    "nodemon": "^3.1.7",
+    "path": "^0.12.7",
+    "pdf-lib": "^1.17.1"
+  },
+  "type": "module"
+}

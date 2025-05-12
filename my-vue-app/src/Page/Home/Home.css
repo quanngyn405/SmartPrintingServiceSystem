@@ -1,0 +1,10 @@
+.Hinh_nen {
+    background-image: url('../../assets/background.jpg'); /* Thêm đường dẫn ảnh */
+    background-size: cover;         /* Ảnh phủ kín màn hình */
+    background-repeat: no-repeat;   /* Căn giữa ảnh */
+    width: 100vw;                   /* Chiều rộng 100% viewport */
+    height: 100vh;                  /* Chiều cao 100% viewport */
+    margin: 0;
+    padding: 0;   
+   background-position: -12.5rem 6.25rem;
+}

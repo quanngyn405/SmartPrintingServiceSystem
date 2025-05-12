@@ -1,0 +1,125 @@
+.print-config-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-panel {
+  width: 40%;
+  padding-right: 20px;
+}
+
+.right-panel {
+  width: 55%;
+  padding-left: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px; /* Giãn cách giữa các option */
+  /* width: 40rem; */
+}
+
+.option label {
+  width: 40%;
+  font-size: 16px;
+}
+
+.option .copies{
+margin-right: 304px;
+width: 100px;
+}
+
+.status .current{
+  margin-bottom: 20px;
+}
+
+.status .currentpage{
+  margin-left: 220px;
+  font-size: 30px;
+}
+
+.status .currentPage{
+  margin-left: 270px;
+  font-size: 30px;
+}
+
+.status .remainpage{
+  margin-left: 220px;
+  font-size: 30px;
+}
+
+select,
+input {
+  width: 55%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.cancel-btn,
+.print-btn {
+  width: 45%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cancel-btn {
+  background-color: #ff6464;
+  color: #050505;
+  width: 100px;
+  margin-left: 130px;
+}
+.cancel-btn:hover{
+  background-color: #ff0000;
+}
+
+.print-btn {
+  background-color: #007bff;
+  color: #fff;
+  width: 100px;
+  margin-right: 130px;
+}
+
+.print-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.status {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .print-config-container {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .print-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

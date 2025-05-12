@@ -1,0 +1,185 @@
+/* Reset cơ bản */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px; 
+  overflow: hidden; /* Loại bỏ thanh cuộn */
+  font-family: Arial, sans-serif;
+}
+
+/* Container chính */
+.print-confirm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Bao phủ toàn bộ màn hình */
+  background-image: url(../../assets/sky.png);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  overflow: hidden; 
+}
+
+/* Tiêu đề */
+.print-confirm-container h3 {
+  font-size: 30px;
+  color: rgb(55, 0, 255);
+}
+
+/* Hộp xác nhận in */
+.print-confirm-box {
+  background-color: rgba(231, 255, 255, 0.95); /* Độ trong suốt */
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 700px;
+  height: 400px;
+  text-align: center;
+  position: relative; /* Để căn chỉnh linh hoạt */
+  overflow: hidden; /* Đảm bảo nội dung không tràn */
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+
+.buff{
+  margin-top: 720px;
+  visibility: hidden;  /*ẩn chữ*/
+}
+
+
+
+
+/* Đường kẻ ngang */
+hr {
+  margin-bottom: 40px;
+}
+
+/* Chi tiết in */
+.print-details {
+  border: 1px solid white;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto; /* Căn giữa cả chiều ngang */
+  background-color: white;
+  height: 200px;
+  opacity: 1; /* Đảm bảo không bị mờ */
+  overflow: hidden; /* Ngăn nội dung tràn */
+}
+
+/* Nội dung bên trong chi tiết */
+.print-details p {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 20px;
+  line-height: 1.6; 
+}
+
+/* Vùng chứa nút bấm */
+.buttonss {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+/* Định dạng nút */
+/* button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+} */
+
+/* Nút hủy */
+.cancel-bu     {
+  background-color: #ff6464;
+  color: #050505;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.cancel-bu:hover {
+  background-color: red;
+}
+
+/* Nút xác nhận */
+.confirm-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.confirm-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Làm mờ nền khi modal hiển thị */
+.blur-background {
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+/* Overlay của modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Làm tối nền */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Hộp Modal */
+.modal-box {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.modal-box p {
+  font-size: 1.3rem;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  line-height: 1.8; /* Tăng khoảng cách giữa các dòng */
+}
+
+.modal-box .ok-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: -20px;
+  float: right; /* Căn nút về phía bên phải */
+}
+
+.modal-box .ok-btn:hover {
+  background-color: #45a049;
+}

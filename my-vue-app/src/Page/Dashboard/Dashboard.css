@@ -1,0 +1,140 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  height: 100vh; /* Set the height of the body to the full viewport */
+  overflow: hidden; /* Loại bỏ thanh cuộn dọc toàn trang */
+}
+
+/* Dashboard container */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Đảm bảo chiều cao của dashboard là 100% */
+  background-color:#0B9CB6;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: 400px; 
+  margin-top: 35px;
+  padding: 20px; /* Giảm padding để tiết kiệm không gian */
+  box-sizing: border-box; /* Ensure padding doesn’t affect width/height */
+  overflow: hidden; /* Loại bỏ thanh cuộn dọc trong dashboard */
+  width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng */
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  text-align: center;
+  color: #10080c9f;
+  margin-bottom: 20px;
+  font-size: 30px; /* Giảm font-size tiêu đề */
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Student Info Section */
+.student-info {
+  width: 100%; /* Đảm bảo phần tử không vượt quá chiều rộng */
+  margin-bottom: 25px;
+  padding: 15px; /* Giảm padding để tiết kiệm không gian */
+  border: 1px solid #696969;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-size: 16px; /* Giảm kích thước font */
+  background-color: white;
+  overflow: hidden; /* Loại bỏ thanh cuộn trong student-info */
+  display: grid; /* Sử dụng grid để tạo cột */
+  grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột có chiều rộng đều nhau */
+  gap: 15px; /* Giảm khoảng cách giữa các cột */
+}
+
+/* Heading for student info */
+.student-info h2 {
+  grid-column: span 2; /* Đặt tiêu đề chiếm toàn bộ 2 cột */
+  font-size: 22px; /* Giảm kích thước font tiêu đề */
+  color: #444;
+  margin-bottom: 25px;
+  margin-left: -10px;
+}
+
+.student-info p {
+  font-size: 16px; /* Giảm kích thước font các đoạn văn */
+  margin: 5px 0;
+}
+
+/* Balance Info Section (no grid layout) */
+.balance-info {
+  width: 100%; /* Đảm bảo phần tử không vượt quá chiều rộng */
+  margin-bottom: 25px;
+  padding: 15px; /* Giảm padding để tiết kiệm không gian */
+  border: 1px solid #696969;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-size: 16px; /* Giảm kích thước font */
+  background-color: white;
+  overflow: hidden; /* Loại bỏ thanh cuộn trong balance-info */
+}
+
+.balance-info p {
+  margin-top: 25px;
+}
+
+/* Balance Section */
+.balance-display {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.balance-amount {
+  display: block;
+  font-size: 28px; /* Giảm kích thước font của số dư */
+  color: #008b8b;
+  font-weight: bold;
+}
+
+.balance-label {
+  color: #666;
+  font-size: 16px; /* Giảm kích thước font của nhãn */
+}
+
+/* Buttons */
+.page-purchase-button {
+  display: block;
+  width: 80%; /* Giảm chiều rộng của nút */
+  padding: 12px; /* Giảm padding của nút */
+  font-size: 18px; /* Giảm kích thước font của nút */
+  color: white;
+  background-color: #008b8b;
+  border: rgba(0, 0, 0, 0.678) 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; /* Center the button */
+}
+
+.page-purchase-button:hover {
+  background-color: #006f6f;
+}
+
+.transaction-link {
+  display: block;
+  width: 80%; /* Giảm chiều rộng của liên kết */
+  padding: 12px; /* Giảm padding của liên kết */
+  font-size: 18px; /* Giảm kích thước font của liên kết */
+  color: #008b8b;
+  background-color: white;
+  border: rgba(0, 0, 0, 0.678) 1px solid;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  margin: 15px auto 0;
+  transition: background-color 0.3s ease;
+}
+
+.transaction-link:hover {
+  background-color: #cccccc;
+}

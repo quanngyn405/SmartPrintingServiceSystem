@@ -1,0 +1,17 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-image: none;
+  margin: 0;
+  padding: 0;
+  
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;           /* Đảm bảo màu không thay đổi khi hover */
+  text-decoration: none;  /* Đảm bảo không có gạch dưới khi hover */
+}

@@ -1,0 +1,212 @@
+/* Đảm bảo không có margin, padding thừa và các phần tử không vượt chiều rộng */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Loại bỏ thanh cuộn ngang */
+  font-family: Arial, sans-serif;
+}
+
+.print_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 40px;
+  box-sizing: border-box;
+  background-image: url(../../assets/sky.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.drag_container {
+  width: 30%;
+  height: 500px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+  /* margin: 120px auto;  */
+  margin-top: 120px;
+  margin-left: 330px;
+}
+
+.drag_container span {
+  font-size: 32px;
+  color: #0B9CB6;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dropzone {
+  width: 90%;
+  height: 480px;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+
+.dropzone .upload-icon {
+  font-size: 170px;
+  color: #4A90E2;
+  margin-top:-50px;
+}
+
+.dropzone .text{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.dropzone .text1{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+
+.dropzone button {
+  width: 180px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #21dcfd;
+  margin-top: 20px;
+}
+
+.error_message {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.file_list_container {
+  width: 30%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 120px;
+  /* margin-right: 220px; */
+  background-color: rgb(185, 233, 248);
+  position: relative;
+}
+
+.file_list_container h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.file_list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  overflow-y: auto; /* Cuộn dọc */
+  overflow-x: hidden; /* Không cho cuộn ngang */
+  margin: 0;
+  max-height: calc(100% - 60px); /* Đảm bảo chiều cao không vượt container */
+}
+
+.file_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  word-wrap: break-word; /* Ngắt dòng nếu quá dài */
+  word-break: break-word;
+}
+
+.file_item span {
+  font-size: 14px;
+  color: #000000;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.file_actions {
+  display: flex;
+  gap: 10px;
+}
+
+.print_button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: green;
+}
+
+.remove_button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+.remove_button:hover, .print_button:hover {
+  opacity: 0.8;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* background-color: rgb(185, 233, 248); */
+  padding: 10px 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.pagination button {
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #4dd8ff;
+  color: white;
+  border: none;
+}
+
+.pagination button:hover {
+  opacity: 0.8;
+}
+
+.pagination button:disabled {
+  background-color: #4dd8ff;
+  cursor: not-allowed;
+}
+
+.pagination .active {
+  font-weight: bold;
+  background-color: #0B9CB6;
+}

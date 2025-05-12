@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #E7F0F8;
+  overflow-y: hidden; /* Ẩn thanh cuộn dọc */
+  height: 100%; /* Đảm bảo chiều cao body luôn đầy đủ */
+}
+
+/* Container */
+.transaction-history-container {
+  width: 80%;
+  margin: 80px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  max-height: calc(100vh - 60px); /* Điều chỉnh chiều cao container */
+  overflow-y: auto; /* Cuộn dọc nếu cần */
+}
+
+/* Title */
+.transaction-history-title {
+  font-size: 32px;
+  color: #008b8b;
+  margin-bottom: 20px;
+}
+
+/* Table */
+.transaction-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.transaction-history-table th,
+.transaction-history-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.transaction-history-table th {
+  background-color: #f2f2f2;
+  color: #444;
+  font-size: 18px;
+}
+
+.transaction-history-table td {
+  font-size: 16px;
+}
+
+.negative-amount {
+  color: red;
+  font-weight: bold;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination-button {
+  background-color: #008b8b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #006f6f;
+}
+
+.pagination-info {
+  font-size: 18px;
+  color: #444;
+  margin: 0 10px;
+}
+
+/* Optional: Hide scrollbar */
+html, body {
+  overflow: hidden; /* Ẩn thanh cuộn dọc nếu không cần thiết */
+  height: 100%; /* Đảm bảo chiều cao trang đầy đủ */
+}

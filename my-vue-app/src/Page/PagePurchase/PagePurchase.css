@@ -1,0 +1,112 @@
+/* General Page Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E7F0F8;
+  }
+  
+  /* Page Purchase Container */
+  .page-purchase {
+    margin: 80px auto 20px; /* Add top margin to account for the nav bar */
+    width: 90%; /* Stretch form width without touching the edges */
+    max-width: 1200px;
+    height: 65vh; /* Fill most of the screen while leaving space for nav bar */
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 36px; /* Larger title size */
+    color: #008b8b;
+    margin-bottom: 10px;
+  }
+  
+  /* Price Info Link */
+  .price-info {
+    display: block;
+    font-size: 20px;
+    color: #0077aa;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .price-info:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Styling */
+  .purchase-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Larger gaps for better spacing */
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:read-only {
+    background-color: #f5f5f5;
+    color: #999;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cancel-button,
+  .purchase-button {
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+  }
+  
+  .cancel-button {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .cancel-button:hover {
+    background-color: #bbb;
+  }
+  
+  .purchase-button {
+    background-color: #008b8b;
+    color: white;
+  }
+  
+  .purchase-button:hover {
+    background-color: #006f6f;
+  }
+  
